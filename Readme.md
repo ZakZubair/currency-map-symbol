@@ -62,6 +62,9 @@ getSymbol('NOT A VALID CODE') //=> '?'
 ```js
 import {getSymbolFromCurrency} from 'currency-map-symbol';
 getSymbolFromCurrency('GBP'); //=> '£'
+
+import {getCurrencyFromSymbol} from 'currency-map-symbol';
+getCurrencyFromSymbol('£'); //=> 'GBP'
 ```
 
 ## Tests
