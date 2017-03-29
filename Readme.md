@@ -4,7 +4,7 @@ A function to lookup the currency symbol for a given currency code and vice vers
 
 ## Installation
 
-    npm install currency-map-symbol
+    npm i currency-map-symbol --save
 
 ## Usage
 
@@ -57,6 +57,13 @@ getSymbol('USD') //=> '$'
 getSymbol('NOT A VALID CODE') //=> '?'
 ```
 
+## ES6 usage
+
+```js
+import {getSymbolFromCurrency} from 'currency-map-symbol';
+getSymbolFromCurrency('GBP'); //=> '£'
+```
+
 ## Tests
 ```bash
 npm test
@@ -64,4 +71,4 @@ npm test
 
 ## Credits
 
-Currency symbols originally sourced from [xe](http://www.xe.com/symbols.php
+Currency symbols originally sourced from [xe](http://www.xe.com/symbols.php)
