@@ -1,5 +1,7 @@
 module.exports =
-{ "AED": "د.إ"
+{"GBP": "£"
+, "USD": "$"
+,"AED": "د.إ"
 , "AFN": "؋"
 , "ALL": "L"
 , "AMD": "dram"
@@ -46,7 +48,6 @@ module.exports =
 , "EUR": "€"
 , "FJD": "$"
 , "FKP": "£"
-, "GBP": "£"
 , "GEL": "₾"
 , "GGP": "£"
 , "GHC": "₵"
@@ -150,7 +151,6 @@ module.exports =
 , "TZS": "TSh"
 , "UAH": "₴"
 , "UGX": "USh"
-, "USD": "$"
 , "UYU": "$U"
 , "UZS": "лв"
 , "VEF": "Bs"
@@ -165,5 +165,4 @@ module.exports =
 , "YER": "﷼"
 , "ZAR": "R"
 , "ZWD": "Z$"
-, "ZWL": "Z$"
 }
