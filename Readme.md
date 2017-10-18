@@ -1,70 +1,48 @@
-# currency-map-symbol
+<h1 align="left">
+  currency-map-symbol
+  
+  [![Build Status](https://travis-ci.org/ZakZubair/currency-map-symbol.svg?branch=master)](https://travis-ci.org/ZakZubair/currency-map-country)
+  ![](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat-square)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+</h1>
 
-A function to lookup the currency symbol for a given currency code and vice versa.
+A function to lookup the currency symbol for a given currency code.
 
 ## Installation
 
-    npm i currency-map-symbol --save
+    npm install currency-map-symbol
 
 ## Usage
 
 ### Get symbol from currency code
 ```js
-var getSymbolFromCurrency = require('currency-map-symbol').getSymbolFromCurrency;
-getSymbolFromCurrency('GBP'); //=> '£'
-getSymbolFromCurrency('EUR'); //=> '€'
-getSymbolFromCurrency('USD'); //=> '$'
-getSymbolFromCurrency('NOT A VALID CODE'); //=> undefined
+// ES5
+const getSymbolFromCurrency = require('currency-symbol-map')
+
+// ES6
+import getSymbolFromCurrency from 'currency-symbol-map'
+
+getSymbolFromCurrency('GBP') //=> '£'
+getSymbolFromCurrency('EUR') //=> '€'
+getSymbolFromCurrency('USD') //=> '$'
+getSymbolFromCurrency('NOT A VALID CODE') //=> undefined
 ```
 
-### Get currency code from symbol
+### Exposed map for other processing
 ```js
-var getCurrencyFromSymbol = require('currency-map-symbol').getCurrencyFromSymbol;
-getCurrencyFromSymbol('£'); //=> 'GBP'
-getCurrencyFromSymbol('€'); //=> 'EUR'
-getCurrencyFromSymbol('$'); //=> 'USD'
-getCurrencyFromSymbol('NOT A VALID CODE'); //=> undefined
-```
+// ES5
+const getSymbolFromCurrency = require('currency-symbol-map')
 
-### Exposed maps for other processing
-```js
-var symbolCurrencyMap = require('currency-map-symbol').symbolCurrencyMap;
-/*
+// ES6
+import getSymbolFromCurrency from 'currency-symbol-map'
+
+/* =>
 {
-  "$": "USD",
-  "£": "GBP",
-  ...
+ "USD" : "$",
+ "GBP" : "£",
+ …
 }
 */
-
-var currencySymbolMap = require('currency-map-symbol').currencySymbolMap;
-/*
-{
-  "USD": "$",
-  "GBP": "£",
-  ...
-}
-*/
-```
-
-## Shorthand usage
-
-```js
-var getSymbol = require('currency-map-symbol')
-getSymbol('GBP') //=> '£'
-getSymbol('EUR') //=> '€'
-getSymbol('USD') //=> '$'
-getSymbol('NOT A VALID CODE') //=> '?'
-```
-
-## ES6 usage
-
-```js
-import {getSymbolFromCurrency} from 'currency-map-symbol';
-getSymbolFromCurrency('GBP'); //=> '£'
-
-import {getCurrencyFromSymbol} from 'currency-map-symbol';
-getCurrencyFromSymbol('£'); //=> 'GBP'
 ```
 
 ## Tests
