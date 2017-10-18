@@ -1,7 +1,7 @@
 <h1 align="left">
   currency-map-symbol
   
-  [![Build Status](https://travis-ci.org/ZakZubair/currency-map-symbol.svg?branch=master)](https://travis-ci.org/ZakZubair/currency-map-country)
+  [![Build Status](https://travis-ci.org/ZakZubair/currency-map-symbol.svg?branch=master)](https://travis-ci.org/ZakZubair/currency-map-symbol)
   ![](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat-square)
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 </h1>
