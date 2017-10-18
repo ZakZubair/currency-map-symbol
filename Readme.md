@@ -17,10 +17,10 @@ A function to lookup the currency symbol for a given currency code.
 ### Get symbol from currency code
 ```js
 // ES5
-const getSymbolFromCurrency = require('currency-symbol-map')
+const getSymbolFromCurrency = require('currency-map-symbol')
 
 // ES6
-import getSymbolFromCurrency from 'currency-symbol-map'
+import getSymbolFromCurrency from 'currency-map-symbol'
 
 getSymbolFromCurrency('GBP') //=> '£'
 getSymbolFromCurrency('EUR') //=> '€'
@@ -31,10 +31,10 @@ getSymbolFromCurrency('NOT A VALID CODE') //=> undefined
 ### Exposed map for other processing
 ```js
 // ES5
-const getSymbolFromCurrency = require('currency-symbol-map')
+const getSymbolFromCurrency = require('currency-map-symbol')
 
 // ES6
-import getSymbolFromCurrency from 'currency-symbol-map'
+import getSymbolFromCurrency from 'currency-map-symbol'
 
 /* =>
 {
