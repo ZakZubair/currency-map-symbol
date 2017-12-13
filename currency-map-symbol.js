@@ -1,10 +1,10 @@
-var currencySymbolMap = require('./map')
+let currencySymbolMap = require('./map');
 
 module.exports = function getSymbolFromCurrency (currencyCode) {
-  if (typeof currencyCode !== 'string') return undefined
-  var code = currencyCode.toUpperCase()
-  if (!currencySymbolMap.hasOwnProperty(code)) return undefined
+  if (typeof currencyCode !== 'string') return undefined;
+  let code = currencyCode.toUpperCase();
+  if (!currencySymbolMap.hasOwnProperty(code)) return undefined;
   return currencySymbolMap[code]
-}
+};
 
-module.exports.currencySymbolMap = currencySymbolMap
+module.exports.currencySymbolMap = currencySymbolMap;

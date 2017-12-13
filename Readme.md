@@ -4,8 +4,7 @@
   [![Build Status](https://travis-ci.org/ZakZubair/currency-map-symbol.svg?branch=master)](https://travis-ci.org/ZakZubair/currency-map-symbol)
   ![](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat-square)
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-  [![code style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-  
+  [![Known Vulnerabilities](https://snyk.io/test/github/zakzubair/currency-map-symbol/badge.svg)](https://snyk.io/test/github/zakzubair/currency-map-symbol)
 </h1>
 
 A function to lookup the currency symbol for a given currency code.
@@ -14,6 +13,20 @@ A function to lookup the currency symbol for a given currency code.
 
     npm install currency-map-symbol
 
+## Test
+
+#### Simple test
+
+    npm run test
+    
+#### Test with watch  
+  
+    npm run test:watch 
+    
+#### Test coverage    
+    npm run test:coverage  
+         
+ 
 ## Usage
 
 ### Get symbol from currency code
@@ -45,11 +58,6 @@ import getSymbolFromCurrency from 'currency-map-symbol'
  …
 }
 */
-```
-
-## Tests
-```bash
-npm test
 ```
 
 ## Credits
