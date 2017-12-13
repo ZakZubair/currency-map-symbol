@@ -6,7 +6,8 @@
     "scripts": {
         "test": "jest --verbose",
         "test:watch": "jest --watch --verbose",
-        "test:coverage": "jest --coverage --verbose"
+        "test:coverage": "jest --coverage --verbose",
+        "prepublishOnly": "test:coverage"
     },
     "keywords": [
         "currency",
