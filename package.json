@@ -7,7 +7,7 @@
         "test": "jest --verbose",
         "test:watch": "jest --watch --verbose",
         "test:coverage": "jest --coverage --verbose",
-        "prepublishOnly": "test:coverage"
+        "prepublishOnly": "npm run test:coverage"
     },
     "keywords": [
         "currency",
